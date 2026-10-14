@@ -48,7 +48,7 @@ func TestSignatureUsingJSR105(sourceDocument io.Reader, out io.Writer, localPart
 	// 2) Load JKS keystore
 	ksPath := os.Getenv("IPS_KEYSTORE_LOCATION")
 	if ksPath == "" {
-		ksPath = "ips.jks"
+		ksPath = "ansh.jks"
 	}
 	storePassword := os.Getenv("IPS_KEYSTORE_PASSWORD")
 	if storePassword == "" {
@@ -56,9 +56,9 @@ func TestSignatureUsingJSR105(sourceDocument io.Reader, out io.Writer, localPart
 	}
 	keyPassword := os.Getenv("IPS_KEY_PASSWORD")
 	if keyPassword == "" {
-		keyPassword = storePassword
+		keyPassword = "password2"
 	}
-	privKey, certs, err := loadKeyAndCertFromJKS(ksPath, storePassword, keyPassword, "ips")
+	privKey, certs, err := loadKeyAndCertFromJKS(ksPath, storePassword, keyPassword, "ansh")
 	if err != nil {
 		return fmt.Errorf("cannot load key/cert from JKS: %w", err)
 	}
