@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Message xmlns="urn:sama" xmlns:ns4="urn:iso:std:iso:20022:tech:xsd:camt.029.001.06" xmlns:ns5="urn:iso:std:iso:20022:tech:xsd:pacs.004.001.06" xmlns:ns12="urn:iso:std:iso:20022:tech:xsd:admn.001.001.01" xmlns:head="urn:iso:std:iso:20022:tech:xsd:head.001.001.01" xmlns:ct="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.06" xmlns:ns6="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.07" xmlns:ns10="urn:iso:std:iso:20022:tech:xsd:admn.003.001.01" xmlns:ns11="urn:iso:std:iso:20022:tech:xsd:admn.002.001.01" xmlns:ns14="urn:iso:std:iso:20022:tech:xsd:admi.002.001.01" xmlns:ns15="urn:iso:std:iso:20022:tech:xsd:prxy.003.001.02" xmlns:ns16="urn:iso:std:iso:20022:tech:xsd:prxy.004.001.02" xmlns:ns1="urn:iso:std:iso:20022:tech:xsd:camt.056.001.05" xmlns:ns3="urn:iso:std:iso:20022:tech:xsd:pain.013.001.05" xmlns:ns7="urn:iso:std:iso:20022:tech:xsd:admn.006.001.01" xmlns:ns8="urn:iso:std:iso:20022:tech:xsd:admn.005.001.01" xmlns:ns9="urn:iso:std:iso:20022:tech:xsd:admn.004.001.01" xmlns:ns2="urn:iso:std:iso:20022:tech:xsd:pain.014.001.05" xmlns:ns13="urn:iso:std:iso:20022:tech:xsd:admi.004.001.02">
+  <AppHdr>
+    <head:Fr>
+      <head:FIId>
+        <head:FinInstnId>
+          <head:ClrSysMmbId>
+            <head:MmbId>SARJHI</head:MmbId>
+          </head:ClrSysMmbId>
+        </head:FinInstnId>
+      </head:FIId>
+    </head:Fr>
+    <head:To>
+      <head:FIId>
+        <head:FinInstnId>
+          <head:ClrSysMmbId>
+            <head:MmbId>SA9999</head:MmbId>
+          </head:ClrSysMmbId>
+        </head:FinInstnId>
+      </head:FIId>
+    </head:To>
+    <head:BizMsgIdr>B20260927SARJHIRJHI7BOPF11124394072</head:BizMsgIdr>
+    <head:MsgDefIdr>pacs.008.001.06</head:MsgDefIdr>
+    <head:CreDt>2026-09-27T11:24:20</head:CreDt>
+    <head:Sgntr>
+      <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+          <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2006/12/xml-c14n11"/>
+          <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+          <ds:Reference URI="">
+            <ds:Transforms>
+              <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+              <ds:Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"/>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <ds:DigestValue>IuhvTY2F5rBlC+04L+FEkzwFraIkfew6KBPgno2oo+c=</ds:DigestValue>
+          </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>FdMVo4lAQC8mvBiFaWegkV6axEOmJ+m+GVv//hHK/EyDQAwYN1UrpLk+5SUF439kJug0JIqRx+jvJsEWO8+SxN+LYsQQ3yk4ZVlzhHisEAnj2WSo6NGL95JgtVSNNrlEjr9RTTk38ZH9vJjICmVz/A9zEwBzqHhrUIYkVXenecf6H7nV/2g57PK3nTBJV9pjnrr9+Ev8K3MNl8z2zwKExdYxpHLo2l2IK0D4qwvbf2vUWqxsGBzWWDb2D7qYwbXc/6X0pcfwNRVzMgnBMUKFuK/YWSWEHLlk8OC36F7Pt4uTIpjEDJRZWLgZVakZXOSnd5+kHslPq7snEF5GnndQeA==</ds:SignatureValue>
+        <ds:KeyInfo>
+          <ds:X509Data>
+            <ds:X509Certificate>MIIDvTCCAqWgAwIBAgIJAP8cW6MsaQnMMA0GCSqGSIb3DQEBCwUAMHUxCzAJBgNVBAYTAlNBMQ8wDQYDVQQIDAZSaXlhZGgxDzANBgNVBAcMBlJpeWFkaDEQMA4GA1UECgwHQWxSYWpoaTEQMA4GA1UECwwHQWxSYWpoaTEgMB4GA1UEAwwXaXBzLnNhdWRpcGF5bWVudC5jb20uc2EwHhcNMjAwNjE5MDYyODM0WhcNMjEwNjE5MDYyODM0WjB1MQswCQYDVQQGEwJTQTEPMA0GA1UECAwGUml5YWRoMQ8wDQYDVQQHDAZSaXlhZGgxEDAOBgNVBAoMB0FsUmFqaGkxEDAOBgNVBAsMB0FsUmFqaGkxIDAeBgNVBAMMF2lwcy5zYXVkaXBheW1lbnQuY29tLnNhMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0WOby3RB4XU9BsOlmBCHdgxssxGU1MLQpbadtI6mX6HixFwbyfX3Wdl3kGg4CW0IkiUf4Kdd1ApcphAcrWJspwGbZqUbLNUaCgGv+V7vkOZZFBiPI3P9KNuRULC3OYKkj384TPMlLVTqLar3slQrJHo5Etc15BJGEFR21Arbqt5JVrlhxahGFuEeH/RmzzAou9PGT5ZDjm5dS+gWjp1g7sxtleLWNtIAxc6Tmc60m+Zv7rimIMIW5VDPq/+A2xpET47yBgqJdrrKsg628i2SoavLVYIXvzUpyxcbImtcACd4UDwqdr/g/gzfZzxPXyUVbT9mIbfmwxefZdpBzRA0MwIDAQABo1AwTjAdBgNVHQ4EFgQUW07j0/ZOpBxOQ1DSPXc+nQ0Emw4wHwYDVR0jBBgwFoAUW07j0/ZOpBxOQ1DSPXc+nQ0Emw4wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAOPnrzVoey2NVXIbhht+3fgECXnPZ6hTWvCx9LiZkUNOD8aHi/0AHeJ4q0bxvBi8xQsh8JUvswoE/SH3XZaMOC7kKUJoSH55roywWJgSUV6O1hgZ8jUDLn65tYGULFPvNDalh0wmZIR6d3ylTGGoQMeJOoRNwEGKXgkYBYaM5VaM74VxQpHhQKiLOIr7pfOU4MsO4g+mvP3GmMU7eBgavpudmtS811qErPP6bN5SESdVDS1piz4WqEWnTaEPMUbedGLB7o8FjHS+FaV+WNzLK+z7VSXTu1ZuaaYntwgWnG0DB7GJOkAImU+1RL5ZWByDrkkRKqjgdxWGsvUC9gOrTIg==</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </ds:Signature>
+    </head:Sgntr>
+  </AppHdr>
+  <CreditTransfer>
+    <ct:FIToFICstmrCdtTrf>
+      <ct:GrpHdr>
+        <ct:MsgId>M20260927SARJHIRJHI7BOPF11124501079</ct:MsgId>
+        <ct:CreDtTm>2026-09-27T11:24:20</ct:CreDtTm>
+        <ct:NbOfTxs>1</ct:NbOfTxs>
+        <ct:TtlIntrBkSttlmAmt Ccy="SAR">30.00</ct:TtlIntrBkSttlmAmt>
+        <ct:IntrBkSttlmDt>2026-09-27</ct:IntrBkSttlmDt>
+        <ct:SttlmInf>
+          <ct:SttlmMtd>CLRG</ct:SttlmMtd>
+          <ct:ClrSys>
+            <ct:Cd>IPS</ct:Cd>
+          </ct:ClrSys>
+        </ct:SttlmInf>
+      </ct:GrpHdr>
+      <ct:CdtTrfTxInf>
+        <ct:PmtId>
+          <ct:InstrId>20260927SARJHIRJHI7BPOM11109000074</ct:InstrId>
+          <ct:EndToEndId>9127092600118556</ct:EndToEndId>
+          <ct:TxId>20260927SARJHIRJHI7BPOM11109000074</ct:TxId>
+        </ct:PmtId>
+        <ct:PmtTpInf>
+          <ct:SvcLvl>
+            <ct:Cd>SDVA</ct:Cd>
+          </ct:SvcLvl>
+          <ct:LclInstrm>
+            <ct:Prtry>TRF</ct:Prtry>
+          </ct:LclInstrm>
+          <ct:CtgyPurp>
+            <ct:Cd>OTHR</ct:Cd>
+          </ct:CtgyPurp>
+        </ct:PmtTpInf>
+        <ct:IntrBkSttlmAmt Ccy="SAR">30.00</ct:IntrBkSttlmAmt>
+        <ct:ChrgBr>SLEV</ct:ChrgBr>
+        <ct:InstgAgt>
+          <ct:FinInstnId>
+            <ct:ClrSysMmbId>
+              <ct:MmbId>SARJHI</ct:MmbId>
+            </ct:ClrSysMmbId>
+          </ct:FinInstnId>
+        </ct:InstgAgt>
+        <ct:InstdAgt>
+          <ct:FinInstnId>
+            <ct:ClrSysMmbId>
+              <ct:MmbId>SAINMA</ct:MmbId>
+            </ct:ClrSysMmbId>
+          </ct:FinInstnId>
+        </ct:InstdAgt>
+        <ct:Dbtr>
+          <ct:Nm>a b c d</ct:Nm>
+          <ct:PstlAdr>
+            <ct:AdrTp>ADDR</ct:AdrTp>
+            <ct:PstCd>11111</ct:PstCd>
+            <ct:TwnNm>AL RIYADH</ct:TwnNm>
+            <ct:Ctry>SA</ct:Ctry>
+          </ct:PstlAdr>
+          <ct:Id>
+            <ct:PrvtId>
+              <ct:Othr>
+                <ct:Id>0000000125231922</ct:Id>
+                <ct:SchmeNm>
+                  <ct:Cd>CUST</ct:Cd>
+                </ct:SchmeNm>
+              </ct:Othr>
+            </ct:PrvtId>
+          </ct:Id>
+          <ct:CtryOfRes>SA</ct:CtryOfRes>
+        </ct:Dbtr>
+        <ct:DbtrAcct>
+          <ct:Id>
+            <ct:IBAN>SA8880000204608016051934</ct:IBAN>
+          </ct:Id>
+          <ct:Ccy>SAR</ct:Ccy>
+          <ct:Nm>ansh</ct:Nm>
+        </ct:DbtrAcct>
+        <ct:DbtrAgt>
+          <ct:FinInstnId>
+            <ct:ClrSysMmbId>
+              <ct:MmbId>SARJHI</ct:MmbId>
+            </ct:ClrSysMmbId>
+          </ct:FinInstnId>
+        </ct:DbtrAgt>
+        <ct:CdtrAgt>
+          <ct:FinInstnId>
+            <ct:ClrSysMmbId>
+              <ct:MmbId>SAINMA</ct:MmbId>
+            </ct:ClrSysMmbId>
+          </ct:FinInstnId>
+        </ct:CdtrAgt>
+        <ct:Cdtr>
+          <ct:Nm>Acme Corporation</ct:Nm>
+        </ct:Cdtr>
+        <ct:CdtrAcct>
+          <ct:Id>
+            <ct:IBAN>SA4315000900131685380008</ct:IBAN>
+          </ct:Id>
+        </ct:CdtrAcct>
+        <ct:RmtInf>
+          <ct:Ustrd>PaymentRef|OTHR</ct:Ustrd>
+        </ct:RmtInf>
+      </ct:CdtTrfTxInf>
+    </ct:FIToFICstmrCdtTrf>
+  </CreditTransfer>
+</Message>
